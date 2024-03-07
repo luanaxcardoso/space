@@ -17,15 +17,37 @@
 6. Para ver os comandos do Django.
 ### django-admin help 
 
-7. Criar um projeto.
+7. Criar projeto.
 ### django-admin startproject setup . (O ponto é para não criar mais uma pasta)
     setup é o nome do projeto, pode ser qualquer nome, mas setup ou config é uma boa prática.
 
-*** Dicas  ***
-Selecionar - Python interpreter. (venv: venv)
+8. Criar app.
+### python manage.py startapp galeria
+
+9. Adicionar a app no settings.py.
+
+10. Views e URLs.
+
+11. Em settings adicionar:
+STATIC_URL = "static/"
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "setup/static"),
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+12. criar pasta templates na raiz do projeto.
+
+13. criar pasta static em setup
+
+14. rodar o comando collectstatic para juntar todos os arquivos estáticos.
+### python manage.py collectstatic
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 Em settings.py, mudar o TIME_ZONE para America/Sao_Paulo e LANGUAGE_CODE para pt-br.
 
-8. Dotenv é uma biblioteca que permite carregar variáveis de ambiente de um arquivo .env para o seu projeto Python.
+Dotenv é uma biblioteca que permite carregar variáveis de ambiente de um arquivo .env para o seu projeto Python.
 ### pip install python-dotenv
 
 Criar .env na raiz do projeto.
