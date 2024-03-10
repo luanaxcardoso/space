@@ -15,7 +15,8 @@
 ### pip install django
 
 6. Para ver os comandos do Django.
-### django-admin help 
+### django-admin help ou
+### python manage.py help
 
 7. Criar projeto.
 ### django-admin startproject setup . (O ponto é para não criar mais uma pasta)
@@ -44,7 +45,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 14. rodar o comando collectstatic para juntar todos os arquivos estáticos.
 ### python manage.py collectstatic
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
 Em settings.py, mudar o TIME_ZONE para America/Sao_Paulo e LANGUAGE_CODE para pt-br.
 
 Dotenv é uma biblioteca que permite carregar variáveis de ambiente de um arquivo .env para o seu projeto Python.
@@ -61,6 +62,27 @@ load_dotenv()
 
 SECRET_KEY = str(os.getenv("SECRET_KEY"))
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Criar as models.
+Rodar o comando:
+### python manage.py makemigrations
+### python manage.py migrate
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+Criar super usuário.
+### python manage.py createsuperuser
+
+admin1
+senha: 1234
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+Após clonar o repositório:
+
+### python -m virtualenv .venv
+### venv\Scripts\activate.ps1
+### pip install -r requirements.txt
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 Rodar o projeto.
 ### python manage.py runserver
