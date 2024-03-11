@@ -74,12 +74,15 @@ Após clonar o repositório:
 
 pip install virtualenv
 ### python -m virtualenv .venv
+ativar o ambiente virtual.
 ### .venv\Scripts\activate
+instalar as dependências.
 ### pip install -r requirements.txt
 ### python manage.py migrate
 
-Criar super usuário.
-### python manage.py createsuperuser
-
 Rodar o projeto.
 ### python manage.py runserver
+    http://127.0.0.1:8000/
+
+Criar super usuário para acessar o admin.
+### python manage.py createsuperuser
