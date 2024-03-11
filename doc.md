@@ -70,19 +70,16 @@ Rodar o comando:
 ### python manage.py migrate
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
+Após clonar o repositório:
+
+pip install virtualenv
+### python -m virtualenv .venv
+### .venv\Scripts\activate
+### pip install -r requirements.txt
+### python manage.py migrate
+
 Criar super usuário.
 ### python manage.py createsuperuser
 
-admin1
-senha: 1234
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-Após clonar o repositório:
-
-### python -m virtualenv .venv
-### venv\Scripts\activate.ps1
-### pip install -r requirements.txt
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
 Rodar o projeto.
 ### python manage.py runserver

@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "galeria.apps.GaleriaConfig",
+    "usuarios.apps.UsuariosConfig",
+    "bootstrap4",
 ]
 
 MIDDLEWARE = [
