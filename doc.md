@@ -14,6 +14,8 @@
 5. Instalar o Django.
 ### pip install django
 
+### pip install django-bootstrap5
+
 6. Para ver os comandos do Django.
 ### django-admin help ou
 ### python manage.py help
@@ -62,7 +64,7 @@ load_dotenv()
 
 SECRET_KEY = str(os.getenv("SECRET_KEY"))
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 Criar as models.
 Rodar o comando:
