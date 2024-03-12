@@ -74,11 +74,11 @@ Rodar o comando:
 //////////////////////////////////////////////////////////////////////////////////////////////////
 Após clonar o repositório:
 
-pip install virtualenv
+Instalar a virtualenv
 ### python -m virtualenv .venv
 ativar o ambiente virtual.
 ### .venv\Scripts\activate
-instalar as dependências.
+Instalar as dependências.
 ### pip install -r requirements.txt
 ### python manage.py migrate
 
