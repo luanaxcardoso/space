@@ -30,7 +30,7 @@ def buscar(request):
         if nome_a_buscar:
             fotografias = fotografias.filter(Q(nome__icontains=nome_a_buscar) | Q(nome__icontains=nome_a_buscar.capitalize()))
     
-    return render(request, 'galeria/buscar.html', {'cards': fotografias, 'buscar': nome_a_buscar})
+    return render(request, 'galeria/index.html', {'cards': fotografias, 'buscar': nome_a_buscar})
 
 
 
@@ -71,5 +71,9 @@ def deletar_imagem(request, foto_id):
     return redirect('index')  
 
 
+def filtro(request, categoria):
+    fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True, categoria=categoria)
+
+    return render(request, 'galeria/index.html', {"cards": fotografias})
     
 
