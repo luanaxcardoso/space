@@ -1,6 +1,5 @@
 from django.urls import path
-from apps.galeria.views import \
-    index, imagem, buscar, nova_imagem, editar_imagem, deletar_imagem, filtro
+from apps.galeria.views import *
 
 #Criar uma lista de URL's
 urlpatterns = [
