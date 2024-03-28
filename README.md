@@ -2,7 +2,6 @@
 
 * Projeto Alura - Bruno Divino
 
-https://github.com/luanaxcardoso/space/assets/112970416/41e7b7c0-e0fe-4951-950c-1065a0b5cffc
 
 ### A aplicação de galeria de imagens foi criada com Django e permite aos usuários criar contas e fazer login, garantindo assim a autenticação e autorização adequadas para acessar áreas restritas do site. Após o login, os usuários têm a capacidade de cadastrar novas imagens na galeria, fornecendo informações relevantes como título, descrição e, é claro, a própria imagem.
 
